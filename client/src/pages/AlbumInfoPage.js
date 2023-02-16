@@ -62,7 +62,7 @@ export default function AlbumInfoPage() {
               <TableRow key={idx}>
                 <TableCell key='#'>{songData[idx].number}</TableCell>
                 <TableCell key='Title'>
-                  <Link onClick={() => setSelectedSongId(songData[0].song_id)}>
+                  <Link onClick={() => setSelectedSongId(songData[idx].song_id)}>
                     <div>{songData[idx].title}</div>
                   </Link>
                 </TableCell>
